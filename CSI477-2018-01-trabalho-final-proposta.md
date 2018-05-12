@@ -44,7 +44,16 @@ Fornecerá as informações dos clientes, dos solicitantes de cotações e dos v
 
 <!-- Construir alguns protótipos para a aplicação, disponibilizá-los no Github e descrever o que foi considerado. //-->
 ### 4. Protótipo
-  Protótipos para as páginas (descrever quais páginas) foram elaborados, e podem ser encontrados em...
+  Foram considerados e modelados os protótipos das páginas:
+  #### Principal
+  Visa reconhecer e diferenciar se um cliente quer fazer uma nova cotação (novo cliente), se já possui 
+  cadastro ou se o usuário é um funcionário.
+  #### Parte Cliente
+  Tela responsável por coletar os dados pessoais do cliente, assim como informações para contato e localidade.
+  #### Parte Veículo
+  Setor de cadastro das informações do veículo, considerando informações necessárias para avaliação (ilustrativa) de um veículo.
+  #### Parte Funcionário
+  Tratará de exibir a qualquer funcionário com acesso autorizado, a lista de solicitações pendentes de cotação, bem como uma pequisa no sistema de quem está cadastrado.
 
 ### 5. Referências
-Referências podem ser incluídas, caso necessário. Utilizar o padrão ABNT.
+
