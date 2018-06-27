@@ -26,6 +26,8 @@
 			<br>
 			<label>Insira sua senha:</label>
 			<input type="password" name="senha" required>
+			<br>
+			<br>
 			<input type="submit" class="btn btn-success" name="prosseguir" value="Prosseguir">
 			<br>
 			<br>
