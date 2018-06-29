@@ -5,7 +5,12 @@
 	<title>Área do Cliente</title>
 	<link rel="stylesheet" href="./css/bootstrap.css">
 </head>
-<body>
+<body>	
+		<br>
+		<div align="right">
+			<a href="router.php?op=14" ><button class="btn btn-warning">Sair</button></a>
+		</div>
+
 		<h1 class="jumbotron text-center">Bem-vindo à Área do Cliente</h1>
 
 		<center>

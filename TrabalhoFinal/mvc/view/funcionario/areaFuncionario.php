@@ -6,6 +6,11 @@
 	<link rel="stylesheet" href="./css/bootstrap.css">
 </head>
 <body>
+		<br>
+		<div align="right">
+			<a href="router.php?op=14"><button class="btn btn-warning">Sair</button></a>
+		</div>
+
 		<h2 class="jumbotron text-center">Bem-vindo à Área de Funcionário</h2>
 
 		<center><h3>Lista de Solicitações Pendentes</h3></center>

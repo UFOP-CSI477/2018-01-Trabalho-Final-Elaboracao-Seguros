@@ -100,4 +100,9 @@
 		include 'view/veiculo/areaVeiculo.php';
 	}
 
+	else if($op == 14){ //Direciona para tela inicial
+
+		include 'index.php';
+	}
+
  ?>

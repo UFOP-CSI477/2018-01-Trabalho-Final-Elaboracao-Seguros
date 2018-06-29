@@ -9,16 +9,36 @@
 		<h2 class="jumbotron text-center">Bem-vindo à Área de Cadastro de Veículo</h2>
 
 		<center>
-			<form action="router.php?op=13" method="post">
-				<label>Marca: </label>
-				<input type="text" name="marca" required><br>
-				<label>Modelo: </label>
-				<input type="text" name="modelo" required><br>
-				<label>FIPE: </label>
-				<input type="text" name="fipe" required><br>
-				<label>Ano: </label>
-				<input type="text" name="ano" required><br>
+			<form class="form-inline" action="router.php?op=13" method="post">
+				<table>
+					<tr>
+						<th></th>
+						<th></th>
+						<th></th>
+						<th></th>
+					</tr>
 
+					<tr>
+						<td align="right"><label>MARCA: </label></td>
+						<td><input class="form-control" type="text" name="marca" required><br></td>
+					</tr>
+
+					<tr>
+						<td align="right"><label>MODELO: </label></td>
+						<td><input class="form-control" type="text" name="modelo" required><br></td>
+					</tr>
+
+					<tr>
+						<td align="right"><label>FIPE: </label></td>
+						<td><input class="form-control" type="text" name="fipe" required><br></td>
+					</tr>
+
+					<tr>
+						<td align="right"><label>ANO: </label></td>
+						<td><input class="form-control" type="text" name="ano" required><br></td>
+					</tr>
+				</table>
+				<br>
 				<input type="submit" class="btn btn-success" name="cadastrar" value="Cadastrar">
 			</form>
 

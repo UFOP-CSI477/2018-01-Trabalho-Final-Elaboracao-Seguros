@@ -10,18 +10,17 @@
 	<div align="right">
 		<label>Acesso Administrativo</label>
 		<br>
-		<a href="router.php?op=3" ><button>Login</button></a>
+		<a href="router.php?op=3"><button class="btn btn-success">Login</button></a>
 
 	</div>
-			
-	
 
 	<center>
+
 		<h1 class="jumbotron">FAÇA AGORA MESMO SUA COTAÇÃO</h1>
 
 		<form action="router.php?op=2" method="post">
 			<label>Insira seu e-mail: </label>
-			<input type="text" name="email" required>
+			<input class="form-control-plaintext" type="text" name="email" required>
 			<br>
 			<br>
 			<label>Insira sua senha:</label>
