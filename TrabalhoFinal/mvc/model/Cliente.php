@@ -38,6 +38,8 @@
      			foreach($rows as $output) {
      				session_start();
      				$_SESSION['cliente_id'] = $output['id'];
+     				$_SESSION['tipo'] = 1;
+     				$_SESSION['nome'] = $output['nome'];
      			}
 
      			include 'view/cliente/areaCliente.php';

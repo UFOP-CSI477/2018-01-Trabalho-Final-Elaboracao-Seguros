@@ -2,6 +2,8 @@
 
 	namespace Controller;
 	use Model\Funcionario;
+	use Model\Database;
+	use PDO;
 
 	class FuncionariosController{
 

@@ -2,6 +2,8 @@
 
 	namespace Controller;
 	use Model\Cliente;
+	use Model\Database;
+	use PDO;
 
 	class ClientesController{
 

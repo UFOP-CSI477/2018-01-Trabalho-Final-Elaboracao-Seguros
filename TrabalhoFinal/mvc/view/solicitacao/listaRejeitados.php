@@ -7,7 +7,33 @@
 </head>
 <body>
 
-	<h2 class="jumbotron text-center">Lista de Procedimentos Rejeitados</h2>
+	<!-- DAQUI -->
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#"> Olá, <?= $_SESSION['nome'] ?> </a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Operações: <span class="sr-only">(current)</span></a></li>
+						<li><a href="router.php?op=8">Listar Procedimentos Aprovados</a></li>
+						<li><a href="router.php?op=9">Listar Procedimentos Rejeitados</a></li>
+						<li><a href="router.php?op=11">Listar Clientes Cadastrados</a></li>
+						<li><a href="router.php?op=12">Cadastrar Novo Veículo</a></li>
+					</ul>
+
+					<ul class="nav navbar-nav navbar-right">
+						<a href="router.php?op=14"><button class="btn navbar-btn">Sair</button></a>
+					</ul>
+
+		</nav>
+
+		<!-- ATÉ AQUI -->
+
+	<br><br><br><br>
 
 	<table class="table table-bordered table-striped table-hover table-condensed">
 

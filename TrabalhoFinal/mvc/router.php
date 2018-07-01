@@ -58,50 +58,96 @@
 		$solicitacaoController = new SolicitacoesController();
 		$solicitacaoController->atualizar($_POST);
 
-		include 'view/funcionario/areaFuncionario.php';
-
+		header('location: ../TrabalhoFinal/router.php?op=10');
 	}
 
 	else if($op == 8){ //Direciona para lista de Solicitações aprovadas
 
-		$solicitacaoController = new SolicitacoesController();
-		$solicitacaoController->listarAprovados();
+		session_start();
+    	$tipo = $_SESSION['tipo'];
 
+    	if($tipo==2){
+    		$solicitacaoController = new SolicitacoesController();
+			$solicitacaoController->listarAprovados();
+    	}
+    	else{
+    		include 'view/cliente/naoLogado.php';
+    	}
 	}
 
 	else if($op == 9){ //Direciona para lista de Solicitações rejeitados
 
-		$solicitacaoController = new SolicitacoesController();
-		$solicitacaoController->listarRejeitados();
+		session_start();
+    	$tipo = $_SESSION['tipo'];
 
+    	if($tipo==2){
+    		$solicitacaoController = new SolicitacoesController();
+			$solicitacaoController->listarRejeitados();
+    	}
+    	else{
+    		include 'view/cliente/naoLogado.php';
+    	}
 	}
 
 	else if($op == 10){ //Direciona para tela de Funcionário
 
-		include 'view/funcionario/areaFuncionario.php';
+		session_start();
+    	$tipo = $_SESSION['tipo'];
+
+    	if($tipo==2){
+    		include 'view/funcionario/areaFuncionario.php';
+    	}
+    	else{
+    		include 'view/cliente/naoLogado.php';
+    	}
 	}
 
 	else if($op == 11){ //Direciona para lista de Clientes
 
-		$clienteController = new ClientesController();
-		$clienteController->listar();
+		session_start();
+    	$tipo = $_SESSION['tipo'];
+
+    	if($tipo==2){
+    		$clienteController = new ClientesController();
+			$clienteController->listar();
+    	}
+    	else{
+    		include 'view/cliente/naoLogado.php';
+    	}
 	}
 
 	else if($op == 12){ //Direciona para tela de cadastro de Veículo
 
-		include 'view/veiculo/areaVeiculo.php';
+		session_start();
+    	$tipo = $_SESSION['tipo'];
+
+    	if($tipo==2){
+    		include 'view/veiculo/areaVeiculo.php';
+    	}
+    	else{
+    		include 'view/cliente/naoLogado.php';
+    	}
 	}
 
 	else if($op == 13){ //Cadastra Veículo
 
-		$veiculoController = new VeiculosController();
-		$veiculoController->cadastrar($_POST);
+		session_start();
+    	$tipo = $_SESSION['tipo'];
 
-		include 'view/veiculo/areaVeiculo.php';
+    	if($tipo==2){
+    		$veiculoController = new VeiculosController();
+			$veiculoController->cadastrar($_POST);
+
+			include 'view/veiculo/areaVeiculo.php';
+    	}
+    	else{
+    		include 'view/cliente/naoLogado.php';
+    	}
 	}
 
 	else if($op == 14){ //Direciona para tela inicial
 
+		//session_destroy();
 		include 'index.php';
 	}
 

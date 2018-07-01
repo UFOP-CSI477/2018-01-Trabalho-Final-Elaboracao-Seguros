@@ -31,6 +31,12 @@
      		$rows = $result->fetchAll(PDO::FETCH_ASSOC);
 
      		if( !empty($rows) ){
+     			foreach($rows as $output) {
+     				session_start();
+     				$_SESSION['tipo'] = 2;
+     				$_SESSION['nome'] = $output['login'];
+     			}
+
      			include 'view/funcionario/areaFuncionario.php';
      		}
      		else{

@@ -5,13 +5,25 @@
 	<title>Área do Cliente</title>
 	<link rel="stylesheet" href="./css/bootstrap.css">
 </head>
-<body>	
-		<br>
-		<div align="right">
-			<a href="router.php?op=14" ><button class="btn btn-warning">Sair</button></a>
-		</div>
+<body>
 
-		<h1 class="jumbotron text-center">Bem-vindo à Área do Cliente</h1>
+	<!-- DAQUI -->
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#"> Olá, <?= $_SESSION['nome'] ?> </a>
+				</div>
+
+				<ul class="nav navbar-nav navbar-right">
+					<a href="router.php?op=14"><button class="btn navbar-btn">Sair</button></a>
+				</ul>
+
+		</nav>
+
+		<!-- ATÉ AQUI -->
+
+		<br><br><br><br>
 
 		<center>
 			<h3>Cadastro de Solicitação de Seguro</h3>
