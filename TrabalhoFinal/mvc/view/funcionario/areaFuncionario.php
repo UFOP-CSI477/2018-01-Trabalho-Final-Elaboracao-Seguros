@@ -17,6 +17,7 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
+						<li><a href="router.php?op=10">Home</a></li>
 						<li class="active"><a href="#">Operações: <span class="sr-only">(current)</span></a></li>
 						<li><a href="router.php?op=8">Listar Procedimentos Aprovados</a></li>
 						<li><a href="router.php?op=9">Listar Procedimentos Rejeitados</a></li>

@@ -151,4 +151,43 @@
 		include 'index.php';
 	}
 
+	else if($op == 15){ //Lista requisições de determinado cliente
+
+		session_start();
+		$cliente_id = $_SESSION['cliente_id'];
+
+		$solicitacaoController = new SolicitacoesController();
+		$solicitacaoController->listarEspecifico($cliente_id);
+	}
+
+	else if($op == 16){ //Direciona para área do cliente
+
+		session_start();
+		$tipo = $_SESSION['tipo'];
+
+		if($tipo==1){
+			include 'view/cliente/areaCliente.php';
+		}
+		else{
+			include 'view/cliente/naoLogado.php';
+		}
+	}
+
+	else if($op == 17){ //Direciona para edição do perfil do cliente
+
+		session_start();
+		$id = $_SESSION['cliente_id'];
+
+		$clienteController = new ClientesController();
+		$clienteController->editaPerfil($id);
+	}
+
+	else if($op == 18){ //Atualiza Cliente
+
+		$clienteController = new ClientesController();
+		$clienteController->atualiza($_POST);
+
+		header('location: ../TrabalhoFinal/router.php?op=16');
+	}
+
  ?>

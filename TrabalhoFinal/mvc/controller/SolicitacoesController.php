@@ -47,6 +47,16 @@
 
 			include 'view/solicitacao/listaRejeitados.php';
 		}
+
+		public function listarEspecifico($cliente_id){
+			
+			$solicitacao = new Solicitacao();
+			$listaPendente = $solicitacao->listarPendentes($cliente_id);
+			$listaAprovada = $solicitacao->listarAprovadas($cliente_id);
+			$listaRejeitada = $solicitacao->listarRejeitadas($cliente_id);
+
+			include 'view/solicitacao/listarEspecifico.php';
+		}
 	
 	}
 

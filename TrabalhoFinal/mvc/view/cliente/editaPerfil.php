@@ -33,31 +33,24 @@
 		<br><br><br><br>
 
 		<center>
-			<h3>Cadastro de Solicitação de Seguro</h3>
-			<br>
-			<form action="router.php?op=6" method="post">
-				<select name="id" id="id" required>
-					<option value="">Selecione seu veículo:</option>
-					<?php 
-					use Model\Veiculo;
+			<form class="form-inline" action="router.php?op=18" method="post">
 
-					$veiculo = new Veiculo();
-					$listado = $veiculo->todos();
-					var_dump($listado);
+				<input type="hidden" name="id" value="<?= $_SESSION['cliente_id'] ?>">
+				
+				<label>Nome: </label>
+				<input class="form-control" type="text" name="nome" value="<?= $cli['nome'] ?>" required><br>
 
-					foreach($listado as $linha):?>
-						<option value=" <?= $linha['id'] ?> "> Marca: <?= $linha['marca'] ?>  |  Modelo: <?= $linha['modelo'] ?>  |  Ano: <?= $linha['ano'] ?></option>
+				<label>E-mail: </label>
+				<input class="form-control" type="text" name="email" value="<?= $cli['email'] ?>" required><br>
 
-					<?php endforeach ?>	
-				</select>
-				<br>
-				<br>
+				<label>CPF: </label>
+				<input class="form-control" type="text" name="cpf" value="<?= $cli['cpf'] ?>" required><br>
 
-				<label>Digite a placa: </label>
-				<input type="text" name="placa" placeholder="XXX-XXXX">
-				<br><br>
+				<label>Senha: </label>
+				<input class="form-control" type="password" name="senha" required><br><br>
 
-				<input type="submit" class="btn btn-success" name="prosseguir" value="Prosseguir">
+				<input class="btn btn-info" type="submit" name="confimar" value="Confimar">
+
 			</form>
 		</center>
 

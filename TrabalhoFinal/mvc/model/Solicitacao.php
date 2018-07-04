@@ -47,6 +47,24 @@
 
 			return $this->db->query($sql);
 		}
+
+		public function listarPendentes($cliente_id){
+			$sql = "SELECT * FROM solicitacoes WHERE cliente_id = '". $cliente_id ."' AND aprovado = '". 1 ."'";
+
+			return $this->db->query($sql);
+		}
+
+		public function listarAprovadas($cliente_id){
+			$sql = "SELECT * FROM solicitacoes WHERE cliente_id = '". $cliente_id ."' AND aprovado = '". 2 ."'";
+
+			return $this->db->query($sql);
+		}
+
+		public function listarRejeitadas($cliente_id){
+			$sql = "SELECT * FROM solicitacoes WHERE cliente_id = '". $cliente_id ."' AND aprovado = '". 3 ."'";
+
+			return $this->db->query($sql);
+		}
 	}
 
 ?>

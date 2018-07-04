@@ -30,6 +30,27 @@
 
 			include 'view/cliente/lista.php';
 		}
+
+		public function editaPerfil($id){
+			
+			$cliente = new Cliente();
+			$inst = $cliente->buscar($id);
+
+			foreach ($inst as $cli) {
+				include 'view/cliente/editaPerfil.php';
+			}
+		}
+
+		public function atualiza($request){
+			$id = $request['id'];
+			$nome = $request['nome'];
+			$email = $request['email'];
+			$cpf = $request['cpf'];
+			$senha = $request['senha'];
+
+			$cliente = new Cliente();
+			$cliente->atualizar($id, $nome, $email, $cpf, $senha);
+		}
 	}
 
 

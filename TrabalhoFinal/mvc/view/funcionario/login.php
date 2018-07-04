@@ -8,13 +8,13 @@
 	<h2 class="jumbotron text-center">Login de Funcionário</h2>
 
 	<center>
-		<form action="router.php?op=5" method="post">
-			<label>Login</label>
-			<input type="text" name="login">
+		<form class="form-inline" action="router.php?op=5" method="post">
+			<label>Login: </label>
+			<input class="form-control" type="text" name="login" required>
 			<br>
-			<label>Senha</label>
-			<input type="password" name="senha">
-			<br>
+			<label>Senha: </label>
+			<input class="form-control" type="password" name="senha" required>
+			<br><br>
 
 			<input type="submit" class="btn btn-success" name="prosseguir" value="Prosseguir">
 		</form>

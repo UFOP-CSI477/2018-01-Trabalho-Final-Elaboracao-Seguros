@@ -62,6 +62,19 @@
 			return $this->db->query($sql);
 		}
 
+		public function buscar($id){
+			$sql = "SELECT * FROM clientes WHERE id = '". $id ."'";
+
+			return $this->db->query($sql);
+		}
+
+		public function atualizar($id, $nome, $email, $cpf, $senha){
+			$sql = "UPDATE clientes
+			SET nome = '". $nome ."', email = '". $email ."', cpf = '". $cpf ."', senha = '". $senha ."'
+			WHERE id='". $id ."'";
+
+			$this->db->query($sql);
+		}
 	}
 
 ?>
