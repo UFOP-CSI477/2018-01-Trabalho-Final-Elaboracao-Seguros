@@ -69,7 +69,7 @@
 			<form action="router.php?op=7" method="post">
 					
 				<select name="aprovado" id="aprovado" required>
-					<option>Selecione a operação que deseja realizar: </option> 
+					<option>Selecione a operação que deseja realizar</option> 
 
 					<option value="2">Aprovar</option>
 					<option value="3">Rejeitar</option>
