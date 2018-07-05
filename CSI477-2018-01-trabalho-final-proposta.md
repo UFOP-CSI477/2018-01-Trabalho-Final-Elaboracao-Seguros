@@ -16,7 +16,7 @@ inicial do projeto.
 <!-- Apresentar o tema. -->
 ### 1. Tema
 
-  O trabalho final tem como tema o desenvolvimento de uma ferramenta que auxilie clientes interessadops
+  O trabalho final tem como tema o desenvolvimento de uma ferramenta que auxilie clientes interessados
   em realizar a cotação de seguro veicular e funcionários da seguradora responsáveis pela administração.
 
 <!-- Descrever e limitar o escopo da aplicação. -->
