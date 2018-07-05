@@ -6,7 +6,7 @@
 <!-- Descrever um resumo sobre o trabalho. -->
 
 ### Resumo
-O objetivo deste documento é apresentar uma proposta para o trabalho a ser desenvolvido 
+O objetivo deste documento é apresentar uma proposta para o trabalho desenvolvido 
 na disciplina CSI477 -- Sistemas WEB I. 
 Estão presentes neste documento os requisitos, 
 o protótipo das telas inicialmente elaboradas, as limitações de abrangência do sistema 
