@@ -24,14 +24,14 @@ inicial do projeto.
 
 #### 2.1. Cliente
 
-As funcionalidades necessárias para que o cliente forneça e cadastre seus dados e receba informações
-sobre os possíveis valores da cotação do veículo.
+As funcionalidades necessárias para que o cliente forneça, cadastre e edite seus dados e receba informações
+sobre suas solicitações que foram aceitas e recusadas e as que ainda estão pendentes.
 As informações gravadas de cada cliente e seu veículo serão informações básicas de contato e fundamentais
 para a cotação.
 
 #### 2.2. Funcionários
 
-Fornecerá as informações dos clientes, dos solicitantes de cotações e dos veículos cadastrados.
+Gerenciam as informações dos clientes, dos solicitantes de cotações e realizam o cadastro de veículos.
   
 
 <!-- Apresentar restrições de funcionalidades e de escopo. -->
@@ -49,11 +49,9 @@ Fornecerá as informações dos clientes, dos solicitantes de cotações e dos v
   Visa reconhecer e diferenciar se um cliente quer fazer uma nova cotação (novo cliente), se já possui 
   cadastro ou se o usuário é um funcionário.
   #### Parte Cliente
-  Tela responsável por coletar os dados pessoais do cliente, assim como informações para contato e localidade.
-  #### Parte Veículo
-  Setor de cadastro das informações do veículo, considerando informações necessárias para avaliação (ilustrativa) de um veículo.
+  Tela onde o cliente realiza a solicitação do seguro, vê o status das solicitações já realizadas e edita seu perfil.
   #### Parte Funcionário
-  Tratará de exibir a qualquer funcionário com acesso autorizado, a lista de solicitações pendentes de cotação, bem como uma pequisa no sistema de quem está cadastrado.
+  Tratará de exibir a qualquer funcionário com acesso autorizado, a lista de solicitações pendentes, aceitas e recusadas de cotação, bem como uma pequisa no sistema de quem está cadastrado, além de realizar o cadastro de veículos com o valor FIPE estipulado.
 
 ### 5. Referências
 
